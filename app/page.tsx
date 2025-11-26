@@ -1,5 +1,6 @@
 import Hero from "./ui/Hero";
 import Navbar from "./ui/navbar";
+import WhoWeAre from "./ui/WhoWeAre";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
           <Hero />
         </div>
       </div>
+
+      <WhoWeAre />
     </div>
   );
 }
