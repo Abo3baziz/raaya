@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function WhoWeAre() {
   return (
-    <section className="bg-main-bg pt-32 px-32">
+    <section className="bg-main-bg pt-55 px-32">
       <div className="flex flex-col items-center mb-24">
         <p className="font-semibold text-paragraph mb-5">من نحن</p>
         <h2 className="font-bold text-3xl text-heading mb-3">

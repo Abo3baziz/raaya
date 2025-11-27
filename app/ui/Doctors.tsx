@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Doctors() {
   return (
-    <section className="pt-32 px-32">
+    <section className="pt-55 px-32">
       <div className="flex flex-col items-center mb-24">
         <p className="font-semibold text-paragraph mb-5">استكشف ابرز الاطباء</p>
         <h2 className="font-bold text-3xl text-heading mb-3">
