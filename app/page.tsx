@@ -2,6 +2,7 @@ import Hero from "./ui/Hero";
 import Navbar from "./ui/navbar";
 import WhoWeAre from "./ui/WhoWeAre";
 import Doctors from "./ui/Doctors";
+import Plans from "./ui/Plans";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       <WhoWeAre />
 
       <Doctors />
+
+      <Plans />
     </div>
   );
 }
