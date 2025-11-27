@@ -18,7 +18,7 @@ export default function Doctors() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-4 gap-x-6">
+      <div className="grid grid-cols-4 gap-x-6 justify-items-center">
         <DoctorCard image={doctor_4} name="د. طارق علام" job="استشاري باطنه">
           <div className="flex justify-start flex-row-reverse items-center">
             <Image src={gold_star} alt="gold star" />
