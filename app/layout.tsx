@@ -8,6 +8,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>رعاية</title>
+        <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+      </head>
       <body className={`${cairo.className} antialiased`}>{children}</body>
     </html>
   );
