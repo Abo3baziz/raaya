@@ -37,7 +37,7 @@ export default function Navbar() {
 
         <Button
           text="احجز الان"
-          className="bg-primary text-white text-[14px] w-25 h-8 px-6 rounded-full leading-[200%]"
+          className="bg-primary  text-[14px] w-25 h-8 px-6 rounded-full leading-[200%]"
         />
       </div>
     </nav>

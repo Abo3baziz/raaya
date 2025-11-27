@@ -8,7 +8,7 @@ export default function Hero() {
     <>
       <div className="grid grid-cols-2 px-32">
         <div className="justify-self-center self-end">
-          <Image src={doctor} alt="" />
+          <Image src={doctor} alt="Doctor image" fetchPriority="high" />
         </div>
 
         <div className="text-right pt-70">
@@ -28,7 +28,7 @@ export default function Hero() {
           <div className="flex gap-x-6 justify-end mb-4">
             <Button
               text="احجز موعد"
-              className="bg-primary text-white text-[14px] w-48 h-10 px-6 rounded-full flex items-center justify-center"
+              className="bg-primary  text-[14px] w-48 h-10 px-6 rounded-full flex items-center justify-center"
             />
             <BorderButton
               className="text-primary border text-[14px] w-48 h-10 px-6 rounded-full flex items-center justify-center"
