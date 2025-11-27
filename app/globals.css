@@ -17,6 +17,7 @@
   --breakpoint-*: initial;
 
   --breakpoint-desktop: 90rem;
+  --font-jetbrains: var(--font-jetbrains);
 }
 
 /* @media (prefers-color-scheme: dark) {
