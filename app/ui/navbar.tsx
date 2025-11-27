@@ -5,7 +5,7 @@ import { Button, BorderButton } from "./Buttons";
 
 export default function Navbar() {
   return (
-    <nav className="flex max-w-full h-20 bg-navbar flex-wrap justify-between text-2xl flex-row-reverse">
+    <nav className="flex max-w-full h-20 flex-wrap justify-between text-2xl flex-row-reverse px-32 bg-[rgba(255,255,255,0.9)] sticky top-0 z-50">
       <div className="flex items-center gap-x-2">
         <p className="font-bold text-primary">رعاية</p>
         <Image src={myLogo} alt="لوجو رعاية" />

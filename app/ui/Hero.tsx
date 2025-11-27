@@ -6,7 +6,7 @@ import Avaters from "@/public/Avatars.png";
 export default function Hero() {
   return (
     <>
-      <div className="grid grid-cols-2 px-32">
+      <div className="grid grid-cols-2 px-32 flex-1 bg-gold-cream relative min-h-[calc(100vh-80px)]">
         <div className="justify-self-center self-end">
           <Image src={doctor} alt="Doctor image" fetchPriority="high" />
         </div>

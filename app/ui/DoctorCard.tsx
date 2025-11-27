@@ -13,7 +13,7 @@ export default function DoctorCard({
   children: ReactElement;
 }) {
   return (
-    <article className="px-4 py-3.5 rounded-3xl bg-white flex flex-col">
+    <article className="px-4 py-3.5 rounded-3xl bg-white flex flex-col w-fit">
       <Image src={image} alt="صورة طبيب" className="rounded-2xl mb-2.5" />
 
       <div className="text-right">
