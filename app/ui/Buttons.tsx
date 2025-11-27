@@ -1,5 +1,4 @@
 import Link from "next/link";
-import clsx from "clsx";
 
 export function Button({
   text,
@@ -9,7 +8,10 @@ export function Button({
   className: string;
 }) {
   return (
-    <Link className={className} href="/not-found">
+    <Link
+      className={`${className} rounded-full flex items-center justify-center text-[14px]`}
+      href="/not-found"
+    >
       {text}
     </Link>
   );
@@ -23,7 +25,10 @@ export function BorderButton({
   className: string;
 }) {
   return (
-    <Link href="/not-found" className={className}>
+    <Link
+      href="/not-found"
+      className={`${className} border text-[14px] rounded-full flex items-center justify-center`}
+    >
       {text}
     </Link>
   );

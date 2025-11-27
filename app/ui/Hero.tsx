@@ -26,12 +26,9 @@ export default function Hero() {
           </div>
 
           <div className="flex gap-x-6 justify-end mb-4">
-            <Button
-              text="احجز موعد"
-              className="bg-primary  text-[14px] w-48 h-10 px-6 rounded-full flex items-center justify-center"
-            />
+            <Button text="احجز موعد" className="bg-primary w-48 h-10 px-6" />
             <BorderButton
-              className="text-primary border text-[14px] w-48 h-10 px-6 rounded-full flex items-center justify-center"
+              className="text-primary w-48 h-10 px-6"
               text="تصفح الاطباء"
             />
           </div>
