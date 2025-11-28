@@ -41,14 +41,18 @@ export function PlanCard({
             {benifits.map((benefit, index) => (
               <li key={index} className="flex gap-x-1.5">
                 <span className="text-heading text-right">{benefit}</span>
-                <Image src={badge} alt="" width={25} />
+                <Image
+                  src={badge}
+                  alt="Badge"
+                  style={{ width: "24px", height: "auto" }}
+                />
               </li>
             ))}
           </ul>
         </div>
       </div>
 
-      <Button text="احجز موعد" className="w-full py-2 bg-primary text-white" />
+      <Button text="احجز موعد" className="w-full py-2 bg-primary " />
     </article>
   );
 }
