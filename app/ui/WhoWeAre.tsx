@@ -2,23 +2,23 @@ import icon_1 from "@/public/icon-1.svg";
 import icon_2 from "@/public/icon-2.svg";
 import icon_3 from "@/public/icon-3.svg";
 import Image from "next/image";
+import SectionHeader from "./SectionHeader";
 
 export default function WhoWeAre() {
   return (
     <section className="bg-main-bg pt-55 px-32">
-      <div className="flex flex-col items-center mb-24">
-        <p className="font-semibold text-paragraph mb-5">من نحن</p>
-        <h2 className="font-bold text-3xl text-heading mb-3">
-          كيف يساعدك رعايه في حجز موعدك الطبي{" "}
-          <span className="text-primary">بكل سهوله</span>
-        </h2>
+      <SectionHeader
+        title="من نحن"
+        subtitle="كيف يساعدك رعايه في حجز موعدك الطبي"
+        highlightedWord="بكل سهوله"
+      >
         <p className="text-paragraph w-[1170px] text-center">
           بدون مكالمات بدون طوابيرز اي تعقيدات كل اللي عليك تختار التخصص و تشوف
           تقيمات الاطباء و تختار الوقت اللي يناسبك. خلال دقائق بيكون عندك موعد
           مع طبيب. و المميز كمان انك تقدر تختار بين استشاره اونلاين او زياره
           للعياده
         </p>
-      </div>
+      </SectionHeader>
 
       <div className="grid grid-cols-3 gap-x-6">
         <div className="card">

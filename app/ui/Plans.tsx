@@ -1,25 +1,15 @@
 import { PLANS_DATA } from "@/app/data/plans";
 import { PlanCard } from "./PlanCard";
+import SectionHeader from "./SectionHeader";
 
-interface PlansProps {
-  title?: string;
-  subtitle?: string;
-  highlightedWord?: string;
-}
-
-export default function Plans({
-  title = "اختر الخطه",
-  subtitle = "خطط الاسعار",
-  highlightedWord = "المناسبه لك و لاسرتك",
-}: PlansProps) {
+export default function Plans() {
   return (
     <section className="pt-55 px-32">
-      <div className="flex flex-col items-center mb-24">
-        <p className="font-semibold text-paragraph mb-5">{subtitle}</p>
-        <h2 className="font-bold text-3xl text-heading mb-3">
-          {title} <span className="text-primary">{highlightedWord}</span>
-        </h2>
-      </div>
+      <SectionHeader
+        title="اختر الخطه"
+        subtitle="خطط الاسعار"
+        highlightedWord="المناسبه لك و لاسرتك"
+      />
 
       <div className="my-32 flex flex-row-reverse gap-x-7 justify-center">
         {PLANS_DATA.map((plan, index) => (

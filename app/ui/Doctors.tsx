@@ -6,17 +6,16 @@ import doctor_4 from "@/public/doctor-4.png";
 import gold_star from "@/public/gold-star.svg";
 import gray_star from "@/public/gray-star.svg";
 import Image from "next/image";
+import SectionHeader from "./SectionHeader";
 
 export default function Doctors() {
   return (
     <section className="pt-55 px-32">
-      <div className="flex flex-col items-center mb-24">
-        <p className="font-semibold text-paragraph mb-5">استكشف ابرز الاطباء</p>
-        <h2 className="font-bold text-3xl text-heading mb-3">
-          من مجموعه متنوعه من{" "}
-          <span className="text-primary">الكوادر الطبيه</span>
-        </h2>
-      </div>
+      <SectionHeader
+        title="استكشف ابرز الاطباء"
+        subtitle="من مجموعه متنوعه من"
+        highlightedWord="الكوادر الطبيه"
+      />
 
       <div className="grid grid-cols-4 gap-x-6 justify-items-center">
         <DoctorCard image={doctor_4} name="د. طارق علام" job="استشاري باطنه">
