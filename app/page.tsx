@@ -4,6 +4,7 @@ import WhoWeAre from "./ui/WhoWeAre";
 import Doctors from "./ui/Doctors";
 import Plans from "./ui/Plans";
 import FQA from "./ui/FQA";
+import Footer from "./ui/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       <Plans />
 
       <FQA />
+
+      <Footer />
     </div>
   );
 }
