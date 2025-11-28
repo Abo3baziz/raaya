@@ -38,7 +38,11 @@ export default function Footer() {
         <div className="justify-self-end">
           <div className="flex gap-x-5 justify-self-end mb-3">
             <h2 className="font-bold text-3xl text-white">رعاية</h2>
-            <Image src={logo} alt="" />
+            <Image
+              src={logo}
+              alt="raaya logo"
+              style={{ width: "30px", height: "auto" }}
+            />
           </div>
 
           <p className="text-white mb-8">

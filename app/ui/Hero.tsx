@@ -8,7 +8,12 @@ export default function Hero() {
     <>
       <div className="grid grid-cols-2 px-32 flex-1 bg-gold-cream relative min-h-[calc(100vh-80px)]">
         <div className="justify-self-center self-end">
-          <Image src={doctor} alt="Doctor image" fetchPriority="high" />
+          <Image
+            src={doctor}
+            alt="Doctor image"
+            fetchPriority="high"
+            loading="eager"
+          />
         </div>
 
         <div className="text-right pt-70">
