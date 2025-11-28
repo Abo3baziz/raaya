@@ -21,7 +21,7 @@ export default function Plans({
         </h2>
       </div>
 
-      <div className="my-32 flex gap-x-7 justify-center">
+      <div className="my-32 flex flex-row-reverse gap-x-7 justify-center">
         {PLANS_DATA.map((plan, index) => (
           <PlanCard
             key={index}
