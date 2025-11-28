@@ -26,7 +26,7 @@ export default function Question({ question, answer }: QuestionProps) {
   return (
     <article
       onClick={() => handleQuestionState()}
-      className={`flex flex-col p-6 rounded-3xl cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-150`}
+      className={`flex flex-col p-6 rounded-3xl cursor-pointer shadow-[0px_4px_10px_rgba(0,0,0,0.25)] hover:shadow-[0px_4px_20px_rgba(0,0,0,0.25)] transition-shadow duration-150`}
     >
       <div className="flex items-center justify-between">
         <button
