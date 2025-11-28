@@ -66,17 +66,17 @@ export default function Footer() {
 
         <ul className="flex gap-x-2.5">
           <li>
-            <Link href="">
+            <Link href="/raaya-facebook">
               <Facebook color="white" aria-label="صفحتنا علي فيسبوك" />
             </Link>
           </li>
           <li>
-            <Link href="" aria-label="صفحتنا علي انستاجرام">
+            <Link href="/raaya-instagram" aria-label="صفحتنا علي انستاجرام">
               <Instagram color="white" />
             </Link>
           </li>
           <li>
-            <Link href="" aria-label="صفحتنا علي لينكدان">
+            <Link href="/raaya-linkedin" aria-label="صفحتنا علي لينكدان">
               <Linkedin color="white" />
             </Link>
           </li>

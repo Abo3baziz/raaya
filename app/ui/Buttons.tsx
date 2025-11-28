@@ -10,7 +10,7 @@ export function Button({
   return (
     <Link
       className={`${className} rounded-full flex items-center justify-center text-[14px]`}
-      href=""
+      href="/requested-page"
     >
       {text}
     </Link>
@@ -26,7 +26,7 @@ export function BorderButton({
 }) {
   return (
     <Link
-      href=""
+      href="/requested-page"
       className={`${className} border text-[14px] rounded-full flex items-center justify-center`}
     >
       {text}
