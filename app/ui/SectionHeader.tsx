@@ -11,9 +11,9 @@ export default function SectionHeader({
 }) {
   return (
     <div className="flex flex-col items-center mb-24">
-      <p className="font-semibold text-paragraph mb-5">{subtitle}</p>
+      <p className="font-semibold text-paragraph mb-5">{title}</p>
       <h2 className="font-bold text-3xl text-heading mb-3">
-        {title} <span className="text-primary">{highlightedWord}</span>
+        {subtitle} <span className="text-primary">{highlightedWord}</span>
       </h2>
       {children}
     </div>
