@@ -16,16 +16,16 @@ export default function Navbar() {
         id="links-container"
       >
         <li>
-          <Link href="#الرئيسيه">الرئيسيه</Link>
+          <Link href="">الرئيسيه</Link>
         </li>
         <li>
-          <Link href="#من نحن">من نحن</Link>
+          <Link href="#whoWeAre">من نحن</Link>
         </li>
         <li>
-          <Link href="#خطط الاسعار">خطط الاسعار</Link>
+          <Link href="#plans ">خطط الاسعار</Link>
         </li>
         <li>
-          <Link href="#الأسئله الشائعه">الأسئله الشائعه</Link>
+          <Link href="#FQA">الأسئله الشائعه</Link>
         </li>
       </ul>
 

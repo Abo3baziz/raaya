@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 
 export default function Plans() {
   return (
-    <section className="pt-55 px-32">
+    <section className="pt-55 px-32" id="plans">
       <SectionHeader
         title="اختر الخطه"
         subtitle="خطط الاسعار"

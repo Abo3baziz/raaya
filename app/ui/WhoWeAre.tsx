@@ -6,7 +6,7 @@ import SectionHeader from "./SectionHeader";
 
 export default function WhoWeAre() {
   return (
-    <section className="bg-main-bg pt-55 px-32">
+    <section className="bg-main-bg pt-55 px-32" id="whoWeAre">
       <SectionHeader
         title="من نحن"
         subtitle="كيف يساعدك رعايه في حجز موعدك الطبي"

@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 
 export default function FQA() {
   return (
-    <section className="bg-main-bg pt-55 px-32 mb-40">
+    <section className="bg-main-bg pt-55 px-32 mb-40" id="FQA">
       <SectionHeader
         title="الاسئله الشائعه"
         subtitle="اكثر الاسئله"
