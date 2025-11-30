@@ -34,9 +34,11 @@
 
 @layer utilities {
   .bg-gold-cream {
-    background: linear-gradient(to bottom,
-        oklch(92.095% 0.06049 79.093),
-        oklch(97.614% 0.00011 271.152));
+    background: linear-gradient(
+      to bottom,
+      oklch(92.095% 0.06049 79.093),
+      oklch(97.614% 0.00011 271.152)
+    );
   }
 
   .card {
@@ -78,13 +80,17 @@ body {
   background: var(--background);
 }
 
-#links-container>li>a {
+html {
+  scroll-behavior: smooth;
+}
+
+#links-container > li > a {
   position: relative;
   padding-bottom: 2px;
   transition: color 100ms;
 }
 
-#links-container>li>a::after {
+#links-container > li > a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -95,19 +101,19 @@ body {
   transition: width 150ms;
 }
 
-#links-container>li>a:hover::after {
+#links-container > li > a:hover::after {
   width: 100%;
 }
 
-#links-container>li>a:hover {
+#links-container > li > a:hover {
   color: var(--primary-color);
 }
 
 /* active state */
-.active>li>a::after {
+.active > li > a::after {
   width: 100%;
 }
 
-.active>li>a {
+.active > li > a {
   color: var(--primary-color);
 }

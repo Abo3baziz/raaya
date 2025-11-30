@@ -8,10 +8,10 @@ export default function Hero() {
     <>
       <div className="bg-gold-cream relative min-h-[calc(100vh-80px)]">
         <div
-          className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 px-4 md:px-8 lg:px-16 xl:px-32 flex-1"
+          className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 px-4 md:px-8 lg:px-16 xl:px-32 flex-1 min-h-[calc(100vh-80px)]"
           id=""
         >
-          <div className="justify-self-center self-end order-1 lg:order-none">
+          <div className="order-1 lg:order-none mt-auto">
             <Image
               src={doctor}
               alt="Doctor image"
@@ -36,7 +36,10 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-x-6 justify-end mb-4">
-              <Button text="احجز موعد" className="bg-primary w-full sm:w-48 h-10 px-6" />
+              <Button
+                text="احجز موعد"
+                className="bg-primary w-full sm:w-48 h-10 px-6"
+              />
               <BorderButton
                 className="text-primary w-full sm:w-48 h-10 px-6"
                 text="تصفح الاطباء"
@@ -45,8 +48,8 @@ export default function Hero() {
             <div className="flex flex-row-reverse gap-3 md:gap-5 items-center">
               <Image src={Avaters} alt="" className="w-20 md:w-auto" />
               <p className="text-sm md:text-base">
-                اكثر من <span className="text-primary">10,000+</span> مريض يستخدم
-                منصة رعاية شهريا
+                اكثر من <span className="text-primary">10,000+</span> مريض
+                يستخدم منصة رعاية شهريا
               </p>
             </div>
           </div>
