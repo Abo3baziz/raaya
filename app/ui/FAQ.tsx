@@ -2,9 +2,9 @@ import Question from "./Question";
 import { faqData } from "@/app/data/questions";
 import SectionHeader from "./SectionHeader";
 
-export default function FQA() {
+export default function FAQ() {
   return (
-    <section className="bg-main-bg pt-55 px-32 mb-40" id="FQA">
+    <section className="bg-main-bg pt-55 px-32 mb-40" id="FAQ">
       <SectionHeader
         title="الاسئله الشائعه"
         subtitle="اكثر الاسئله"

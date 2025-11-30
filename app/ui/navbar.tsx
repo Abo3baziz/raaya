@@ -25,7 +25,7 @@ export default function Navbar() {
           <Link href="#plans ">خطط الاسعار</Link>
         </li>
         <li>
-          <Link href="#FQA">الأسئله الشائعه</Link>
+          <Link href="#FAQ">الأسئله الشائعه</Link>
         </li>
       </ul>
 
