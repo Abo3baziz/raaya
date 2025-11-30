@@ -1,6 +1,9 @@
 import "./globals.css";
 import { cairo } from "@/app/ui/fonts";
 import type { Metadata } from "next";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
 export const metadata: Metadata = {
   title: "شركة رعاية – منصة طبية لحجز المواعيد مع نخبة من الأطباء",
@@ -13,14 +16,27 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   return (
     <html lang="ar">
-      <body className={`${cairo.className} antialiased`}>{children}</body>
+      <body className={`${cairo.className} antialiased`}>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      </body>
     </html>
   );
 }
