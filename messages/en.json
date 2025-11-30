@@ -1,0 +1,16 @@
+{
+  "button": {
+    "check-now": "Book now",
+    "english": "English"
+  },
+  "logo": {
+    "imageAlt": "Raaya's logo",
+    "text": "raaya"
+  },
+  "navbar": {
+    "faq": "FAQs",
+    "main": "Home",
+    "plans": "Pricing Plans",
+    "whoWeAre": "About Us"
+  }
+}
