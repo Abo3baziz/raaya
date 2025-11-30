@@ -5,16 +5,21 @@ import Link from "next/link";
 import { Button, BorderButton } from "./Buttons";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const tNav = useTranslations("navbar");
+  const tLogo = useTranslations("logo");
+  const tButton = useTranslations("button");
+
   return (
-    <nav className="flex max-w-full flex-wrap justify-between text-2xl flex-row-reverse bg-[rgba(255,255,255,0.9)] sticky top-0 z-50">
-      <div className="w-full max-w-[1440px] mx-auto flex flex-wrap justify-between flex-row-reverse px-4 md:px-8 lg:px-16 xl:px-32 h-20">
+    <nav className="flex max-w-full flex-wrap justify-between text-2xl bg-[rgba(255,255,255,0.9)] sticky top-0 z-50">
+      <div className="w-full max-w-[1440px] mx-auto flex flex-wrap justify-between px-4 md:px-8 lg:px-16 xl:px-32 h-20">
         <div className="flex items-center gap-x-2">
-          <p className="font-bold text-primary">رعاية</p>
-          <Image src={myLogo} alt="لوجو رعاية" />
+          <p className="font-bold text-primary">{tLogo("text")}</p>
+          <Image src={myLogo} alt={tLogo("imageAlt")} />
         </div>
 
         {/* Mobile menu button */}
@@ -32,29 +37,29 @@ export default function Navbar() {
           id="links-container"
         >
           <li>
-            <Link href="">الرئيسيه</Link>
+            <Link href="">{tNav("main")}</Link>
           </li>
           <li>
-            <Link href="#whoWeAre">من نحن</Link>
+            <Link href="#whoWeAre">{tNav("whoWeAre")}</Link>
           </li>
           <li>
-            <Link href="#plans ">خطط الاسعار</Link>
+            <Link href="#plans ">{tNav("plans")}</Link>
           </li>
           <li>
-            <Link href="#FAQ">الأسئله الشائعه</Link>
+            <Link href="#FAQ">{tNav("faq")}</Link>
           </li>
         </ul>
 
         {/* Desktop buttons */}
         <div className="hidden lg:flex flex-row-reverse items-center gap-x-6">
           <BorderButton
-            text="الانجليزيه"
+            text={tButton("english")}
             className="text-primary border text-[14px] w-25 h-8 px-6 rounded-full leading-[200%]"
           />
 
           <Button
-            text="احجز الان"
-            className="bg-primary  text-[14px] w-25 h-8 px-6 rounded-full leading-[200%]"
+            text={tButton("check-now")}
+            className="bg-primary  text-[14px] w-fit h-8 px-6 rounded-full leading-[200%]"
           />
         </div>
 
@@ -64,33 +69,33 @@ export default function Navbar() {
             <ul className="flex flex-col gap-y-4 font-semibold text-[1rem] items-end">
               <li>
                 <Link href="" onClick={() => setIsMenuOpen(false)}>
-                  الرئيسيه
+                  {tNav("main")}
                 </Link>
               </li>
               <li>
                 <Link href="#whoWeAre" onClick={() => setIsMenuOpen(false)}>
-                  من نحن
+                  {tNav("whoWeAre")}
                 </Link>
               </li>
               <li>
                 <Link href="#plans " onClick={() => setIsMenuOpen(false)}>
-                  خطط الاسعار
+                  {tNav("plans")}
                 </Link>
               </li>
               <li>
                 <Link href="#FAQ" onClick={() => setIsMenuOpen(false)}>
-                  الأسئله الشائعه
+                  {tNav("faq")}
                 </Link>
               </li>
             </ul>
 
             <div className="flex flex-col items-stretch gap-y-3 mt-4">
               <Button
-                text="احجز الان"
+                text={tButton("check-now")}
                 className="bg-primary text-[14px] h-10 px-6 rounded-full"
               />
               <BorderButton
-                text="الانجليزيه"
+                text={tButton("english")}
                 className="text-primary border text-[14px] h-10 px-6 rounded-full"
               />
             </div>
