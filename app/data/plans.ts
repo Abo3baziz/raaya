@@ -1,47 +1,47 @@
 export interface Plan {
   plan_name: string;
   description: string;
-  price: number;
-  benifits: string[];
+  price: string;
+  benefits: string[];
 }
 
 export const PLANS_DATA: Plan[] = [
   {
-    plan_name: "حساب فردي",
-    description: "ابدا بحجز مواعيدك الطبيه بسهوله",
-    price: 650.99,
-    benifits: [
-      "حجز مواعيد غير محدوده لطبيب واحد",
-      "ملف طبي فردي متكامل",
-      "تذكير بالمواعيد",
-      "حفظ التقارير الطبيه",
+    plan_name: "single-plan.title",
+    description: "single-plan.p",
+    price: "single-plan.price",
+    benefits: [
+      "single-plan.benefits.1",
+      "single-plan.benefits.2",
+      "single-plan.benefits.3",
+      "single-plan.benefits.4",
     ],
   },
   {
-    plan_name: "حساب عائلي - حتي 5 افراد",
-    description: "ادارة صحه العائله بكل سهوله",
-    price: 850.99,
-    benifits: [
-      "حجز مواعيد غير محدوده لحد 5 أفراد",
-      "ملفات طبيه منفصلة لكل فرد",
-      "إدارة الأدوية و التوصيات",
-      "تذكيرات و تنبيهات مواعيد",
-      "مشاركة التقارير بين أفراد العائلة",
-      "دعم فني خلال ساعات العمل",
+    plan_name: "limited-family-plan.title",
+    description: "limited-family-plan.p",
+    price: "limited-family-plan.price",
+    benefits: [
+      "limited-family-plan.benefits.1",
+      "limited-family-plan.benefits.2",
+      "limited-family-plan.benefits.3",
+      "limited-family-plan.benefits.4",
+      "limited-family-plan.benefits.5",
+      "limited-family-plan.benefits.6",
     ],
   },
   {
-    plan_name: "حساب عائلي - غير محدود",
-    description: "حل شامل لادارة صحة جميع افراد الاسره",
-    price: 1320.99,
-    benifits: [
-      "عدد غير محدود من الأفراد",
-      "لوحة تحكم متقدمة لإدارة العائله",
-      "حجز مواعيد غير محدود لأي عدد من المستخدمين",
-      "تحليلات صحية و تقارير شهرية",
-      "إدارة الأدوية و التنبيهات الذكية",
-      "حفظ غير محدود للتقارير الطبيه",
-      "دعم فني مميز علي مدار اليوم",
+    plan_name: "unlimited-family-plan.title",
+    description: "unlimited-family-plan.p",
+    price: "unlimited-family-plan.price",
+    benefits: [
+      "unlimited-family-plan.benefits.1",
+      "unlimited-family-plan.benefits.2",
+      "unlimited-family-plan.benefits.3",
+      "unlimited-family-plan.benefits.4",
+      "unlimited-family-plan.benefits.5",
+      "unlimited-family-plan.benefits.6",
+      "unlimited-family-plan.benefits.7",
     ],
   },
 ];
