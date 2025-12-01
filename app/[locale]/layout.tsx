@@ -33,7 +33,7 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang="ar">
+    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body className={`${cairo.className} antialiased`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
