@@ -3,21 +3,21 @@ import icon_2 from "@/public/icon-2.svg";
 import icon_3 from "@/public/icon-3.svg";
 import Image from "next/image";
 import SectionHeader from "./SectionHeader";
+import { useTranslations } from "next-intl";
 
 export default function WhoWeAre() {
+  const t = useTranslations("whoWeAre");
+
   return (
     <section className="bg-main-bg pt-12 md:pt-16 lg:pt-55" id="whoWeAre">
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-16 xl:px-32">
         <SectionHeader
-          title="من نحن"
-          subtitle="كيف يساعدك رعايه في حجز موعدك الطبي"
-          highlightedWord="بكل سهوله"
+          title={t("title")}
+          subtitle={t("subTitle.normal")}
+          highlightedWord={t("subTitle.colored")}
         >
           <p className="text-paragraph max-w-[1170px] w-full px-4 text-center text-sm md:text-base">
-            بدون مكالمات بدون طوابيرز اي تعقيدات كل اللي عليك تختار التخصص و تشوف
-            تقيمات الاطباء و تختار الوقت اللي يناسبك. خلال دقائق بيكون عندك موعد
-            مع طبيب. و المميز كمان انك تقدر تختار بين استشاره اونلاين او زياره
-            للعياده
+            {t("p")}
           </p>
         </SectionHeader>
 
@@ -26,9 +26,9 @@ export default function WhoWeAre() {
             <Image src={icon_3} alt="" className="mb-2 shadow-xl" />
 
             <div className="flex flex-col items-center">
-              <h3 className="h3-card-Heading">احجز مع طبيبك المفضل</h3>
+              <h3 className="h3-card-Heading">{t("cards.card-3.heading")}</h3>
               <p className="text-paragraph text-center text-sm md:text-base">
-                اختر بين عشرات الاطباء المعتمدين و ابدا حجزك الان
+                {t("cards.card-3.p")}
               </p>
             </div>
           </div>
@@ -36,9 +36,9 @@ export default function WhoWeAre() {
             <Image src={icon_2} alt="" className="mb-2 shadow-xl" />
 
             <div className="flex flex-col items-center">
-              <h3 className="h3-card-Heading">جدوله سهله و فوريه</h3>
+              <h3 className="h3-card-Heading">{t("cards.card-2.heading")}</h3>
               <p className="text-paragraph text-center text-sm md:text-base">
-                حدد الموعد المناسب لك و احصل علي تأكيد خلال دقائق
+                {t("cards.card-2.p")}
               </p>
             </div>
           </div>
@@ -46,9 +46,9 @@ export default function WhoWeAre() {
             <Image src={icon_1} alt="" className="mb-2 shadow-xl" />
 
             <div className="flex flex-col items-center">
-              <h3 className="h3-card-Heading">استشارات اونلاين او حضوري</h3>
+              <h3 className="h3-card-Heading">{t("cards.card-1.heading")}</h3>
               <p className="text-paragraph text-center text-sm md:text-base">
-                تواصل مع الطبيب عبر مكالمه او فيديو او زياره في العياده{" "}
+                {t("cards.card-1.p")}
               </p>
             </div>
           </div>

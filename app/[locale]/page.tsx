@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      {/* 
+
       <Hero />
 
       <WhoWeAre />
@@ -21,7 +21,7 @@ export default function Home() {
 
       <FAQ />
 
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

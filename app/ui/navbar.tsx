@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className="flex max-w-full flex-wrap justify-between text-2xl bg-[rgba(255,255,255,0.9)] sticky top-0 z-50">
       <div className="w-full max-w-[1440px] mx-auto flex flex-wrap justify-between px-4 md:px-8 lg:px-16 xl:px-32 h-20">
         <div className="flex items-center gap-x-2">
-          <p className="font-bold text-primary">{tLogo("text")}</p>
+          <p className="font-bold text-primary">{tLogo("company")}</p>
           <Image src={myLogo} alt={tLogo("imageAlt")} />
         </div>
 

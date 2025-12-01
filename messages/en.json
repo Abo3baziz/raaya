@@ -1,16 +1,159 @@
 {
   "button": {
-    "check-now": "Book now",
+    "check-now": "Book Now",
     "english": "English"
   },
   "logo": {
-    "imageAlt": "Raaya's logo",
-    "text": "raaya"
+    "imageAlt": "Raaya Logo",
+    "company": "Raaya"
   },
   "navbar": {
-    "faq": "FAQs",
+    "faq": "FAQ",
     "main": "Home",
     "plans": "Pricing Plans",
-    "whoWeAre": "About Us"
+    "whoWeAre": "Who We Are"
+  },
+  "hero": {
+    "subTitle": "Welcome to Raaya Platform",
+    "title": "Start Your Health Journey Easily",
+    "p": "Book appointments across different specialties without calls or waiting.",
+    "members": {
+      "start": "More than",
+      "number": "10,000+",
+      "end": "patients use Raaya monthly"
+    },
+    "buttons": {
+      "explore-doctors": "Explore Doctors",
+      "check-now": "Book Appointment"
+    }
+  },
+  "whoWeAre": {
+    "title": "Who We Are",
+    "subTitle": {
+      "normal": "How Raaya helps you book your medical appointments",
+      "colored": "with ease"
+    },
+    "p": "No calls, no queues, no complications. Just choose the specialty, check doctor ratings, and pick the time that suits you. Within minutes, your appointment is confirmed. You can also choose between online consultation or clinic visit.",
+    "cards": {
+      "card-1": {
+        "heading": "Online or In-Clinic Consultations",
+        "p": "Connect with your doctor via call, video, or clinic visit"
+      },
+      "card-2": {
+        "heading": "Easy & Instant Scheduling",
+        "p": "Choose your preferred time and receive confirmation within minutes"
+      },
+      "card-3": {
+        "heading": "Book With Your Favorite Doctor",
+        "p": "Choose from dozens of verified doctors and start your booking"
+      }
+    }
+  },
+  "doctors": {
+    "title": "Explore Featured Doctors",
+    "subTitle": {
+      "normal": "From a diverse group of",
+      "colored": "medical specialists"
+    },
+    "doctor-names": {
+      "doctor-1": {
+        "name": "Dr. Mohamed Qabbani",
+        "job": "Internal Medicine Consultant",
+        "rate": "92 reviews"
+      },
+      "doctor-2": {
+        "name": "Dr. Mervat Suleiman",
+        "job": "ENT Consultant",
+        "rate": "37 reviews"
+      },
+      "doctor-3": {
+        "name": "Dr. Mahmoud Osman",
+        "job": "Surgery Consultant",
+        "rate": "73 reviews"
+      },
+      "doctor-4": {
+        "name": "Dr. Tarek Allam",
+        "job": "Internal Medicine Consultant",
+        "rate": "112 reviews"
+      }
+    }
+  },
+  "plans": {
+    "title": "Choose Your Plan",
+    "subTitle": {
+      "normal": "Pricing Plans",
+      "colored": "for you and your family"
+    },
+    "button": "Book Appointment",
+    "single-plan": {
+      "title": "Individual Plan",
+      "p": "Start booking your medical appointments easily",
+      "price": "650.99",
+      "benefits": {
+        "1": "Unlimited appointments with one doctor",
+        "2": "Complete personal medical profile",
+        "3": "Appointment reminders",
+        "4": "Save medical reports"
+      }
+    },
+    "limited-family-plan": {
+      "title": "Family Plan – Up to 5 Members",
+      "p": "Manage your family's health with ease",
+      "price": "850.99",
+      "benefits": {
+        "1": "Unlimited bookings for up to 5 family members",
+        "2": "Separate medical profiles for each member",
+        "3": "Medication & recommendations management",
+        "4": "Reminders & appointment alerts",
+        "5": "Share reports between family members",
+        "6": "Customer support during working hours"
+      }
+    },
+    "unlimited-family-plan": {
+      "title": "Unlimited Family Plan",
+      "p": "A complete solution for managing your whole family's health",
+      "price": "1,320.99",
+      "benefits": {
+        "1": "Unlimited number of family members",
+        "2": "Advanced dashboard for family management",
+        "3": "Unlimited bookings for any number of users",
+        "4": "Health analytics & monthly reports",
+        "5": "Smart medication & alert management",
+        "6": "Unlimited storage for medical reports",
+        "7": "Premium 24/7 support"
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subTitle": { "normal": "Most commonly", "colored": " asked questions" },
+    "q1": "What is Raaya?",
+    "a1": "Raaya is a medical platform that helps patients book appointments with doctors and clinics easily across various specialties.",
+    "q2": "How does the booking process work?",
+    "a2": "The patient selects the doctor or specialty, chooses an available time, and confirms the details to get instant booking confirmation.",
+    "q3": "Is booking through Raaya free?",
+    "a3": "Yes, booking through Raaya is completely free, and no extra charges are added.",
+    "q4": "Does Raaya guarantee appointment availability?",
+    "a4": "Raaya only shows available slots provided by the doctor or clinic. Once booked, the appointment is officially reserved under the patient’s name.",
+    "q5": "Can I cancel or reschedule an appointment?",
+    "a5": "Yes, patients can cancel or modify appointments according to each clinic’s policies. Some clinics allow instant changes, while others may require contacting support.",
+    "q6": "How can I contact customer service?",
+    "a6": "You can contact us via the contact page, WhatsApp, email, or the hotline on the website.",
+    "q7": "Do doctors pay to join the platform?",
+    "a7": "Raaya offers subscription plans for doctors and clinics to manage appointments and increase visibility to patients.",
+    "q8": "What specialties are available on Raaya?",
+    "a8": "The platform includes many specialties like Pediatrics, Dentistry, Dermatology, Cardiology, OB/GYN, Orthopedics, and more.",
+    "q9": "Can I see the consultation price before booking?",
+    "a9": "Yes, Raaya displays each doctor’s consultation fee clearly before booking.",
+    "q10": "Does Raaya provide patient reviews?",
+    "a10": "Yes, you can view patient ratings and reviews for doctors before booking to ensure a better experience."
+  },
+  "footer": {
+    "company": "Raaya",
+    "p": "Book appointments across different specialties without calls or waiting.",
+    "copyright": "© 2025 Raaya – All rights reserved.",
+    "contact-us": "Contact Us",
+    "address": "123 Al-Nasr Street, Cairo, Egypt",
+    "button": "Book Appointment"
   }
 }
