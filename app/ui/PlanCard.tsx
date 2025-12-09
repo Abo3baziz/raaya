@@ -3,6 +3,7 @@ import { jetBrains_Mono } from "./fonts";
 import badge from "@/public/badge-check.svg";
 import Image from "next/image";
 import { Button } from "./Buttons";
+import { useTranslations } from "next-intl";
 
 interface PlanCardProps {
   plan_name: string;
@@ -17,6 +18,7 @@ export function PlanCard({
   price,
   benefits,
 }: PlanCardProps) {
+  const t = useTranslations("plans");
   return (
     <article className="flex flex-col justify-between bg-white rounded-3xl pt-10 px-10 pb-8 w-96 h-150 shadow-lg hover:shadow-2xl transition-shadow duration-300">
       <div className="flex flex-col items-end w-full">
@@ -47,7 +49,7 @@ export function PlanCard({
         </div>
       </div>
 
-      <Button text="احجز موعد" className="w-full py-2 bg-primary " />
+      <Button text={t("button")} className="w-full py-2 bg-primary " />
     </article>
   );
 }
