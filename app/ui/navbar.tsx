@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex max-w-full flex-wrap justify-between text-2xl bg-[rgba(255,255,255,0.9)] sticky top-0 z-50">
-      <div className="w-full max-w-[1440px] mx-auto flex flex-wrap justify-between px-4 md:px-8 lg:px-16 xl:px-32 h-20 relative">
+      <div className="w-full max-w-[1440px] mx-auto flex flex-wrap flex-row-reverse justify-between px-4 md:px-8 lg:px-16 xl:px-32 h-20 relative">
         <div className="flex items-center gap-x-2">
           <p className="font-bold text-primary">{tLogo("company")}</p>
           <Image src={myLogo} alt={tLogo("imageAlt")} />
@@ -70,8 +70,8 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute left-0 top-20 bg-[#d6d6d6] w-full px-8 py-10">
-            <ul className="flex flex-col gap-y-4 font-semibold text-[1rem] items-end">
+          <div className="lg:hidden absolute left-0 top-20  bg-[#d6d6d6] w-full flex flex-col items-center px-8 py-10">
+            <ul className="flex flex-col gap-y-4 font-semibold text-[1rem] items-end ">
               <li>
                 <Link href="" onClick={() => setIsMenuOpen(false)}>
                   {tNav("main")}
