@@ -49,7 +49,11 @@ export function PlanCard({
         </div>
       </div>
 
-      <Button text={t("button")} className="w-full py-2 bg-primary " />
+      <Button
+        text={t("button")}
+        url="placeholder"
+        className="w-full py-2 bg-primary "
+      />
     </article>
   );
 }

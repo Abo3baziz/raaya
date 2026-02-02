@@ -62,6 +62,7 @@ export default function Footer() {
             </p>
 
             <Button
+              url="/placeholder"
               text={t("button")}
               className="w-full sm:w-44 h-10 bg-primary font-semibold justify-self-end"
             />

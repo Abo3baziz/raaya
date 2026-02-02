@@ -11,7 +11,7 @@ export default function Hero() {
     <>
       <div className="bg-gold-cream relative min-h-[calc(100vh-80px)]">
         <div
-          className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 px-4 md:px-8 lg:px-16 xl:px-32 flex-1 min-h-[calc(100vh-80px)]"
+          className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 px-4 md:px-8 lg:px-16 xl:px-32 flex-1 min-h-[calc(100vh-80px)] md:place-items-center"
           id=""
         >
           <div className="order-1 lg:order-0 mt-auto">
@@ -20,7 +20,7 @@ export default function Hero() {
               alt="Doctor image"
               fetchPriority="high"
               loading="eager"
-              className="max-w-full h-auto"
+              className="max-w-full h-auto md:mt-25"
             />
           </div>
 
@@ -37,12 +37,14 @@ export default function Hero() {
                 {t("p")}
               </p>
             </div>
-            <div className="flex sm:flex-row gap-4 sm:gap-x-6 mb-4">
+            <div className="flex sm:flex-row gap-4 sm:gap-x-6 mb-4 justify-center">
               <Button
+                url="placeholder"
                 text={t("buttons.check-now")}
                 className="bg-primary w-full sm:w-48 h-10 px-6"
               />
               <BorderButton
+                url="placeholder"
                 className="text-primary w-full sm:w-48 h-10 px-6"
                 text={t("buttons.explore-doctors")}
               />

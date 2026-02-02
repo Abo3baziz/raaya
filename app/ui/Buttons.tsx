@@ -3,14 +3,16 @@ import Link from "next/link";
 export function Button({
   text,
   className,
+  url,
 }: {
   text?: string;
   className: string;
+  url: string;
 }) {
   return (
     <Link
       className={`${className} rounded-full flex items-center justify-center text-[14px]`}
-      href="/requested-page"
+      href={url}
     >
       {text}
     </Link>
@@ -20,13 +22,15 @@ export function Button({
 export function BorderButton({
   text,
   className,
+  url,
 }: {
   text: string;
   className: string;
+  url: string;
 }) {
   return (
     <Link
-      href="/requested-page"
+      href={url}
       className={`${className} border text-[14px] rounded-full flex items-center justify-center`}
     >
       {text}
