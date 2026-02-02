@@ -155,5 +155,12 @@
     "contact-us": "Contact Us",
     "address": "123 Al-Nasr Street, Cairo, Egypt",
     "button": "Book Appointment"
+  },
+  "error": {
+    "underConstruction": "Under Construction",
+    "pageNotFound": "Page Not Found",
+    "description": "The page you are looking for does not exist or is currently under construction. Our team is working hard to bring you something great!",
+    "backToHome": "Back to Home",
+    "errorCode": "Error Code: 404 | Page Under Construction"
   }
 }

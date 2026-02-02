@@ -1,6 +1,9 @@
 import { AlertTriangle, Construction, Home } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function NotFound() {
+  const t = useTranslations("error");
+
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-gold-cream">
       <div className="max-w-2xl w-full text-center">
@@ -20,13 +23,10 @@ export default function NotFound() {
         {/* Under Construction */}
         <div className="mb-8" dir="rtl">
           <h2 className="text-4xl font-bold text-slate-800 mb-4">
-            تحت الإنشاء
+            {t("underConstruction")}
           </h2>
-          <p className="text-xl text-slate-600 mb-2">الصفحة غير موجودة</p>
-          <p className="text-slate-500 max-w-md mx-auto">
-            الصفحة التي تبحث عنها غير موجودة أو قيد الإنشاء حالياً. فريقنا يعمل
-            بجد لنقدم لك شيئاً رائعاً!
-          </p>
+          <p className="text-xl text-slate-600 mb-2">{t("pageNotFound")}</p>
+          <p className="text-slate-500 max-w-md mx-auto">{t("description")}</p>
         </div>
 
         {/* Caution Tape Design */}
@@ -43,12 +43,12 @@ export default function NotFound() {
           dir="rtl"
         >
           <Home className="w-5 h-5" />
-          العودة للرئيسية
+          {t("backToHome")}
         </a>
 
         {/* Additional Info */}
         <div className="mt-12 text-slate-400 text-sm" dir="rtl">
-          <p>رمز الخطأ: 404 | الصفحة تحت الإنشاء</p>
+          <p>{t("errorCode")}</p>
         </div>
       </div>
     </div>
