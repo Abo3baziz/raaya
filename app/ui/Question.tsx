@@ -28,7 +28,8 @@ export default function Question({ question, answer }: QuestionProps) {
       onClick={() => handleQuestionState()}
       className={`flex flex-col p-6 rounded-3xl cursor-pointer shadow-[0px_4px_10px_rgba(0,0,0,0.25)] hover:shadow-[0px_4px_20px_rgba(0,0,0,0.25)] transition-shadow duration-150`}
     >
-      <div className="flex items-center justify-between">
+      <div className="flex  items-center justify-between">
+        <p className="text-2xl font-semibold">{question}</p>
         <button
           aria-label="افتح السؤال"
           onClick={() => handleQuestionState()}
@@ -36,11 +37,9 @@ export default function Question({ question, answer }: QuestionProps) {
         >
           <Image src={arrow_down} alt="" width={30} />
         </button>
-
-        <p className="text-2xl font-semibold">{question}</p>
       </div>
 
-      <p className={`self-end mt-8 ${answerStyles}`}>{answer}</p>
+      <p className={`mt-8 ${answerStyles}`}>{answer}</p>
     </article>
   );
 }

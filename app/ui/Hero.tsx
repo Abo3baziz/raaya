@@ -24,7 +24,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="text-right pt-8 md:pt-16 lg:pt-70 order-2 lg:order-0">
+          <div className="pt-8 md:pt-16 lg:pt-70 order-2 lg:order-0">
             <div>
               <p className="text-base md:text-[20px] text-primary mb-3 md:mb-5">
                 {t("subTitle")}
@@ -37,7 +37,7 @@ export default function Hero() {
                 {t("p")}
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-x-6 justify-end mb-4">
+            <div className="flex sm:flex-row gap-4 sm:gap-x-6 mb-4">
               <Button
                 text={t("buttons.check-now")}
                 className="bg-primary w-full sm:w-48 h-10 px-6"
@@ -47,7 +47,7 @@ export default function Hero() {
                 text={t("buttons.explore-doctors")}
               />
             </div>
-            <div className="flex flex-row-reverse gap-3 md:gap-5 items-center">
+            <div className="flex gap-3 md:gap-5 items-center">
               <Image src={Avaters} alt="" className="w-20 md:w-auto" />
               <p className="text-sm md:text-base">
                 {t("members.start")}

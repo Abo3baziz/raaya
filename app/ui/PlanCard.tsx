@@ -21,7 +21,7 @@ export function PlanCard({
   const t = useTranslations("plans");
   return (
     <article className="flex flex-col justify-between bg-white rounded-3xl pt-10 px-10 pb-8 w-96 h-150 shadow-lg hover:shadow-2xl transition-shadow duration-300">
-      <div className="flex flex-col items-end w-full">
+      <div className="flex flex-col w-full">
         <h2 className="font-semibold text-2xl mb-1.5 w-full">{plan_name}</h2>
         <p className="text-paragraph mb-6">{description}</p>
         <p
@@ -34,15 +34,15 @@ export function PlanCard({
         <span className="block min-w-full h-0.5 bg-black my-7"></span>
 
         <div>
-          <ul className="flex flex-col items-end gap-y-2">
+          <ul className="flex flex-col gap-y-2">
             {benefits.map((benefit, index) => (
               <li key={index} className="flex gap-x-1.5">
-                <span className="text-heading text-right">{benefit}</span>
                 <Image
                   src={badge}
                   alt="Badge"
                   style={{ width: "24px", height: "auto" }}
                 />
+                <span className="text-heading">{benefit}</span>
               </li>
             ))}
           </ul>
