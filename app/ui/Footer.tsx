@@ -6,6 +6,8 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   const t = useTranslations("footer");
   return (
     <footer className="bg-heading py-6 md:py-8 lg:py-10">
@@ -62,9 +64,9 @@ export default function Footer() {
             </p>
 
             <Button
-              url="/placeholder"
+              url="/signup"
               text={t("button")}
-              className="w-full sm:w-44 h-10 bg-primary font-semibold justify-self-end"
+              className="w-full sm:w-44 h-10 bg-primary justify-self-end"
             />
           </div>
         </div>
@@ -73,7 +75,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between gap-4 items-center">
           <p className="text-white font-semibold text-sm md:text-base text-center md:text-left order-2 md:order-1">
-            {t("copyright")}
+            © {year} {t("copyright")}
           </p>
 
           <ul className="flex gap-x-2.5 order-1 md:order-2">

@@ -51,7 +51,7 @@ export function PlanCard({
 
       <Button
         text={t("button")}
-        url="placeholder"
+        url="signup"
         className="w-full py-2 bg-primary "
       />
     </article>

@@ -39,12 +39,12 @@ export default function Hero() {
             </div>
             <div className="flex sm:flex-row gap-4 sm:gap-x-6 mb-4 justify-center">
               <Button
-                url="placeholder"
+                url="/signup"
                 text={t("buttons.check-now")}
                 className="bg-primary w-full sm:w-48 h-10 px-6"
               />
               <BorderButton
-                url="placeholder"
+                url="signup"
                 className="text-primary w-full sm:w-48 h-10 px-6"
                 text={t("buttons.explore-doctors")}
               />

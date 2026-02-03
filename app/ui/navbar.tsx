@@ -62,8 +62,8 @@ export default function Navbar() {
           />
 
           <Button
-            url="placeholder"
-            text={tButton("check-now")}
+            url="/signup"
+            text={tButton("login")}
             className="bg-primary  text-[14px] w-fit h-8 px-6 rounded-full leading-[200%]"
           />
         </div>
@@ -98,7 +98,7 @@ export default function Navbar() {
               <Button
                 text={tButton("check-now")}
                 className="bg-primary text-[14px] h-10 px-6 rounded-full"
-                url="/placeholder"
+                url="/signup"
               />
               <BorderButton
                 text={locale === "en" ? "العربية" : "English"}
