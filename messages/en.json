@@ -1,6 +1,6 @@
 {
   "button": {
-    "check-now": "Book Now",
+    "login": "Login",
     "english": "English"
   },
   "logo": {
@@ -151,7 +151,7 @@
   "footer": {
     "company": "Raaya",
     "p": "Book appointments across different specialties without calls or waiting.",
-    "copyright": "© 2025 Raaya – All rights reserved.",
+    "copyright": "Raaya – All rights reserved.",
     "contact-us": "Contact Us",
     "address": "123 Al-Nasr Street, Cairo, Egypt",
     "button": "Book Appointment"
@@ -162,5 +162,10 @@
     "description": "The page you are looking for does not exist or is currently under construction. Our team is working hard to bring you something great!",
     "backToHome": "Back to Home",
     "errorCode": "Error Code: 404 | Page Under Construction"
+  },
+  "meta": {
+    "title": "Raaya – Medical Platform for Booking Appointments with Top Doctors",
+    "description": "Raaya is a trusted medical platform that allows you to easily book appointments with top doctors across various specialties. Book your appointment now and receive reliable healthcare.",
+    "keywords": "Raaya, medical platform, appointment booking, doctors, book a doctor, medical care, healthcare services, specialist doctors, medical consultations"
   }
 }
